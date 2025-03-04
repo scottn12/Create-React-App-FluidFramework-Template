@@ -1,8 +1,3 @@
-/*!
- * Copyright (c) Microsoft Corporation. All rights reserved.
- * Licensed under the MIT License.
- */
-
 import { TinyliciousClient, type TinyliciousClientProps } from "@fluidframework/tinylicious-client";
 import { SharedTree, type ContainerSchema, type IFluidContainer, type TreeView } from "fluid-framework";
 import { Dice, treeConfiguration } from "./treeSchema";

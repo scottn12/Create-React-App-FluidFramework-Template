@@ -1,0 +1,40 @@
+{
+  "package": {
+    "dependencies": {
+      "@fluidframework/tinylicious-client": "^2.22.1",
+      "fluid-framework": "^2.22.1",
+      "react": "^19.0.0",
+      "react-dom": "^19.0.0"
+    },
+    "devDependencies": {
+      "@craco/craco": "^7.1.0",
+      "@types/node": "^16.18.126",
+      "@types/react": "^19.0.10",
+      "@types/react-dom": "^19.0.4",
+      "start-server-and-test": "^2.0.10",
+      "tinylicious": "^5.0.0",
+      "typescript": "^5.8.2"
+    },
+    "overrides": {
+      "typescript": "^5.8.2"
+    },
+    "scripts": {
+      "start": "start-server-and-test start:server 7070 start:client",
+      "build": "craco build",
+      "start:client": "craco start",
+      "start:server": "tinylicious",
+      "start-and-test-server": "npm run start && npm run serve"
+    },
+    "eslintConfig": {
+      "extends": ["react-app", "react-app/jest"]
+    },
+    "browserslist": {
+      "production": [">0.2%", "not dead", "not op_mini all"],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
+}

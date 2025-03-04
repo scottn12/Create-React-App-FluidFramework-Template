@@ -47,10 +47,6 @@ function App() {
         <button className="rollButton" type="button" onClick={roll}>
           <span className="rollText">Roll</span>
         </button>
-        <div className="text">
-          To learn more, visit{" "}
-          <a href="https://fluidframework.com/">fluidframework.com</a>
-        </div>
       </div>
     );
   }
